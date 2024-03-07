@@ -3,6 +3,7 @@ import { Layout } from "../layout/Layout";
 import { ViewHome } from "./Ruta/Home/viewHome";
 import { ViewCategory } from "./Ruta/Categories/viewCategory";
 import { AppModal } from "../components/appModal/appModal";
+import { AppContact } from "../components/appContact/appContact";
 
 export const appRoutes = createBrowserRouter([
     {
@@ -67,7 +68,7 @@ export const appRoutes = createBrowserRouter([
         },
         {
             path: "contacto",
-            element: <ViewCategory category="3"/>,
+            element: <AppContact/>,
         }
   
        

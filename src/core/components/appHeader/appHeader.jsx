@@ -22,7 +22,7 @@ export const AppHeader = () => {
       <div className="md:flex md:items-center  md:gap-16">
         <Link  to="/" className="flex items-center  gap-2" >
           <img src={icon}  alt="configuracion" className="h-8 w-auto bg-[#fff] rounded-full"  />
-          <h1 className="text-[#A2D8F2] transition text-lg font-medium hover:text-[#730202]/75">Lamparas </h1>
+          <h1 className="text-[#F2CEA2] transition text-lg font-medium hover:text-[#638C95] ">Lamparas </h1>
         </Link>
       </div>
 
@@ -31,7 +31,7 @@ export const AppHeader = () => {
           <ul className="flex items-center gap-6 text-sm">
             {menu.map((item) => (
             <li key={item.id}>
-              <Link className="text-[#A2D8F2] transition text-lg font-medium hover:text-[#730202]/75" to={item.link}> {item.name} </Link>
+              <Link className="text-[#F2CEA2] transition text-lg font-medium hover:text-[#638C95]  focus:bg-[#000] p-2 rounded-lg" to={item.link}> {item.name} </Link>
             </li>
             ))}
           </ul>
