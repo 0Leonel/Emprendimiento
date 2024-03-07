@@ -17,7 +17,7 @@ export const AppCarousel = (props) => {
     return (
         <div id="default-carousel" className="relative w-full" data-carousel="slide">
             {/* Carousel wrapper */}
-            <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div className="relative h-[_24rem] overflow-hidden rounded-lg md:h-96">
                 {/* Renderizar solo las imágenes disponibles */}
                 {imagenes.map((item, index) => (
                     <img
@@ -33,15 +33,15 @@ export const AppCarousel = (props) => {
                 <>
                     <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev onClick={retrocederImagen}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-</svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
 
                         {/* Icono del botón anterior */}
                     </button>
                     <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next onClick={avanzarImagen}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-</svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
 
                         {/* Icono del botón siguiente */}
                     </button>

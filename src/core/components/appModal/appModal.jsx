@@ -19,20 +19,20 @@ export const AppModal =(props)=> {
   </div>
      :<>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-        <div className="relative w-auto my-6 mx-auto max-w-sm lg:max-w-4xl " >
+        <div className="relative w-auto my-6 mx-auto max-w-md  lg:max-w-4xl " >
           {/*content*/}
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-[#013A40] max-w-6xl outline-none focus:outline-none">
             {/*header*/}
             <div className="flex items-start justify-between p-4 bg-opacity-30 bg-[#143437] border-solid border-blueGray-200 rounded-t">
-              <h3 className="text-lg lg:text-3xl font-semibold text-[#BCBCBC]">{item?.titulo}</h3>
+              <h3 className="text-xl lg:text-3xl font-semibold text-[#BCBCBC]">{item?.titulo}</h3>
               
             </div>
             {/*body*/}
-            <div className="relative p-2 flex-auto" >
+            <div className="relative flex-auto px-1" >
               <div className='grid lg:grid-cols-2'>
               <AppCarousel imagenN1={item?.imagenN1} imagenN2={item?.imagenN2} imagenN3={item?.imagenN3}/>
               {/* <img src={item?.imagenN1} alt={item?.titulo} className='w-full h-full rounded-lg' /> */}
-              <p className="my-4 text-justify text-[#BCBCBC] text-md lg:text-lg leading-relaxed p-2">
+              <p className="my-4 text-justify text-[#BCBCBC] text-lg lg:text-lg leading-relaxed p-2">
               {item?.descripcion ?? "Instrucciones no disponibles"}
                 </p>                
               </div>
