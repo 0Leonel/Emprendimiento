@@ -67,7 +67,7 @@ export const appRoutes = createBrowserRouter([
         },
         {
             path: "contacto",
-            element: <ViewCategory category="5"/>,
+            element: <ViewCategory category="3"/>,
         }
   
        
