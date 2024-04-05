@@ -17,7 +17,7 @@ export const AppCarousel = (props) => {
     return (
         <div id="default-carousel" className="relative w-full" data-carousel="slide">
             {/* Carousel wrapper */}
-            <div className="relative h-[_24rem] overflow-hidden rounded-lg lg:h-[_30rem]">
+            <div className="relative h-[_34rem] overflow-hidden rounded-lg ">
                 {/* Renderizar solo las imágenes disponibles */}
                 {imagenes.map((item, index) => (
                     <img

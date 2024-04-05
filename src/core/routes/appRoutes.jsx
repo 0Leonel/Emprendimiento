@@ -56,19 +56,30 @@ export const appRoutes = createBrowserRouter([
               },
             ],
         },
-        {
-            path: "pared",
-            element: <ViewCategory category="3"/>,
-            children: [
-              {
-                path: ":id",
-                element: <AppModal category="3"/>,
-              },
-            ],
-        },
+        // {
+        //     path: "pared",
+        //     element: <ViewCategory category="3"/>,
+        //     children: [
+        //       {
+        //         path: ":id",
+        //         element: <AppModal category="3"/>,
+        //       },
+        //     ],
+        // },
+
         {
             path: "contacto",
             element: <AppContact/>,
+        },
+        {
+          path:"cosas",
+          element: <ViewCategory category="4"/>,
+          children: [
+            {
+              path: ":id",
+              element: <AppModal category="4"/>,
+            },
+          ]
         }
   
        

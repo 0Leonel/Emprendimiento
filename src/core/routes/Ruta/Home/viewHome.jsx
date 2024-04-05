@@ -2,7 +2,7 @@
 export const ViewHome = () => {
 
   return (
-    <div className='text-3xl bg-[#000] min-h-screen flex flex-col justify-start items-center text-[#F2CEA2]'>
+    <div className='text-3xl  min-h-screen flex flex-col justify-start items-center text-[#F2CEA2]'>
     <h1 className='text-3xl lg:text-4xl justify-center text-center font-bold '>Bienvenidos a la exhibición de Leonel: Arte en Madera</h1>
     <div className='text-lg lg:text-2xl lg:max-w-4xl px-4 pt-2 text-justify'>
 
