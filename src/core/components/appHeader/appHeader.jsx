@@ -26,7 +26,7 @@ export const AppHeader = () => {
             <div className="md:flex md:items-center md:gap-16">
               <Link to="/" className="flex items-center gap-2">
                 <img src={icon} alt="configuracion" className="h-8 w-auto" />
-                <h1 className="text-[#F2CEA2] transition text-lg font-medium hover:text-[#143841] ">Wood Light </h1>
+                {/* <h1 className="text-[#F2CEA2] transition text-lg font-medium hover:text-[#143841] "> </h1> */}
               </Link>
             </div>
             <div className='hidden md:block'>
