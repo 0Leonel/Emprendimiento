@@ -4,9 +4,9 @@ export const AppCard = (props) => {
   return (
     <>
         {data?.map((item)=>(
-            <div className="relative group w-full max-w-sm  rounded-lg shadow-sm hover:shadow-xl  " key={item.id}>
+            <div className="relative group w-full justify-center max-w-xs sm:max-w-sm  rounded-lg shadow-sm hover:shadow-xl  " key={item.id}>
             <Link to={`${item.id}`}  className='relative block'>
-                <img className="rounded-lg group-hover:" src={item.imagenN1} alt="product image" />
+                <img className="rounded-lg group-hover w-full" src={item.imagenN1} alt="product image" />
                 <div className="absolute bottom-0 inset-x-0 flex items-center justify-between opacity-0 group-hover:opacity-100 p-2">
                     <div className='bg-[#D1C56D] rounded-full py-3 w-24 flex items-center justify-center'>
                         <span className="text-2xl font-bold text-[#0D0D0D] ">${item?.precio}</span>
@@ -18,7 +18,7 @@ export const AppCard = (props) => {
                 </div>
             </Link>
             <div className=" absolute top-0 inset-x-0 text-center  px-2 pb-2 opacity-0 group-hover:opacity-100 bg-white/50 rounded-lg">
-                    <h5 className="text-xl font-semibold tracking-tight text-[#0D0D0D]">{item.titulo}</h5>
+                    <h5 className="md:text-xl font-semibold tracking-tight text-[#0D0D0D]">{item.titulo}</h5>
             </div>
         </div>
         ))}
